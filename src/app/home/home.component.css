@@ -45,7 +45,7 @@ p{
    
     background: #313237;
 }
-/* .skill-logo{
+.skill-logo{
     font-size: 48px;
     align-items: center;
     justify-content: space-around;
@@ -55,7 +55,7 @@ p{
  
   color: #28e134f0;
  
-} */
+}
 .skill-logo-form{
     background: #dcdcf4;border-radius: 50%;width: 64px;height: 64px;display: flex;justify-content: center;align-items: center;
 }
