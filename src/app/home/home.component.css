@@ -58,7 +58,7 @@ section{
  
 }
 .skill-logo-form{
-    background: transparent;border-radius: 50%;width: 64px;height: 64px;display: flex;justify-content: center;align-items: center;
+    background: transparent;border-radius: 50%;width: 64px;height: 64px;display: flex;justify-content: center;align-items: center;gap: 10px;
 }
 /* .card-project{
     padding: 1rem;

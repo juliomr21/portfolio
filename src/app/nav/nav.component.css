@@ -7,4 +7,11 @@
    display: flex;
    gap: 45px;
    font-size: medium;
+   
+}
+@media(max-width:450px)
+{
+    .nav-bar{
+        padding: 1rem;
+    }
 }
