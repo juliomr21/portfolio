@@ -1,0 +1,9 @@
+.gap10{
+    gap: 20px;
+}
+.flex{
+    display: flex;
+}
+.center{
+    justify-content: center;
+}

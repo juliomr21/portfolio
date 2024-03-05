@@ -1,0 +1,10 @@
+.nav-bar{
+    padding: 2rem;
+    display: flex;
+    justify-content: end;
+}
+.aling-link{
+   display: flex;
+   gap: 45px;
+   font-size: medium;
+}
