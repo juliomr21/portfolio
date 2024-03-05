@@ -78,6 +78,10 @@ height: 90%;
 border-radius: 6px;
 box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 }
+/* .img-project:hover{
+    width: 110%;
+    height: 100%;
+} */
 .gap10{
     gap: 20px;
 }
@@ -102,6 +106,10 @@ flex: none;
 order: 3;
 flex-grow: 0;
 
+}
+.project-card:hover{
+    box-shadow: 0 8px 16px rgba(225, 224, 232, 0.266);
+  transform: translateY(-2px);
 }
 @media(max-width: 450px){
     h1{
