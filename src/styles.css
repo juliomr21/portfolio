@@ -2,10 +2,10 @@
   --background-color: #222;
   --text-color: #fff;
 }
-/* @font-face {
+@font-face {
     font-family: 'Heebo';
     src: url('assets/fonts/heebo/Heebo-VariableFont_wght.ttf') format('truetype');
 
-  } */
+  }
   
 /* You can add global styles to this file, and also import other style files */
