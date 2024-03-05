@@ -17,7 +17,9 @@ p{
     font-family: 'Heebo';
     font-style: normal;
 }
-
+section{
+    padding: 3rem;
+}
 .flex{
     display: flex;
    
@@ -41,8 +43,7 @@ p{
 }
 .skill-section{
    
-    padding: 3rem;
-   
+    padding: 3rem;   
     background: #313237;
 }
 .skill-logo{
@@ -104,8 +105,27 @@ flex-grow: 0;
 }
 @media(max-width: 450px){
     h1{
-        font-size: 40px;
-  line-height: 50px;
+        font-size: 33px;
+  line-height: 40px;
     }
-   
+    section{
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+   .skill-section{
+    padding-right: 1rem;
+    padding-left: 1rem;
+   }
+   .personal-info{
+    padding-right: 1rem;
+    padding-left: 1rem;
+   }
+   .project-section{
+    padding-right: 1rem;
+    padding-left: 1rem;
+   }
+   .experiencia{
+    padding-right: 1rem;
+    padding-left: 1rem;
+   }
 }
