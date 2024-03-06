@@ -7,3 +7,11 @@
 .center{
     justify-content: center;
 }
+.logo{
+    width: 64px;
+    height: 64px;
+}
+.img-logo{
+    width: 40px;
+    height: 40px; 
+}
