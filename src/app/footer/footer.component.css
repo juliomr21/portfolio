@@ -15,3 +15,11 @@
     width: 40px;
     height: 40px; 
 }
+.wid-fit{
+    width: fit-content;
+  
+}
+.line-blue{
+    height: 3px;
+    background: darkslateblue;
+}

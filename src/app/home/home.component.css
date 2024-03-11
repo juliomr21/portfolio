@@ -17,6 +17,10 @@ p{
     font-family: 'Heebo';
     font-style: normal;
 }
+i{
+    margin-top: auto;
+    margin-bottom: auto;
+}
 section{
     padding: 3rem;
 }
@@ -62,7 +66,7 @@ section{
   
 }
 .skill-logo-form{
-    background: transparent;border-radius: 50%;width: 64px;height: 64px;display: flex;justify-content: center;align-items: center;gap: 10px;
+    background: transparent;border-radius: 50%;width: 48px;height: 48px;display: flex;justify-content: center;align-items: center;gap: 10px;
 }
 /* .card-project{
     padding: 1rem;
@@ -152,6 +156,10 @@ align-content: center;
   flex: none;
   order: 3;
   flex-grow: 0;
+}
+.btn-primary{
+    background: darkslateblue;
+    border-color: #3b3b77;  
 }
 .certificacion-link{
     padding: 5px;
