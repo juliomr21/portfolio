@@ -37,6 +37,7 @@ section{
        padding: 3rem;
 }
 
+
 .download-btn{
     background: #3b3b77;
     color: antiquewhite;
@@ -45,7 +46,9 @@ section{
    
     padding: 3rem;   
     background: #313237;
+        
 }
+
 .skill-logo{
     font-size: 48px;
     align-items: center;
@@ -55,7 +58,8 @@ section{
   margin-right: auto;
  
   color: #28e134f0;
- 
+  position: relative;
+  
 }
 .skill-logo-form{
     background: transparent;border-radius: 50%;width: 64px;height: 64px;display: flex;justify-content: center;align-items: center;gap: 10px;
@@ -190,3 +194,50 @@ flex-grow: 0;
     padding-left: 1rem;
  }
 }
+.cont{
+    height: 100%;
+  width: 400px;
+  background: blue;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  overflow: hidden;
+
+}
+.text-test{
+    position: relative;
+top: 200px;
+transition: top 1s;
+}
+.cont:hover .text-test{
+    top: 0;
+}
+.cont::view-transition .text-test{
+    top: 0;
+}
+@keyframes flut {
+    0%{
+        top: 200px;
+    }
+    100%{
+        top: 0;
+    }
+}
+.slidein {
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-iteration-count: 3;
+    animation-direction: alternate;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
