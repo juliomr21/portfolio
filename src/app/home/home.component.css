@@ -18,6 +18,9 @@ p{
     font-style: normal;
 }
 i{
+   color: white;
+}
+i{
     margin-top: auto;
     margin-bottom: auto;
 }
@@ -68,12 +71,12 @@ section{
 .skill-logo-form{
     background: transparent;border-radius: 50%;width: 48px;height: 48px;display: flex;justify-content: center;align-items: center;gap: 10px;
 }
-/* .card-project{
-    padding: 1rem;
-    width: 850px;
+.center-img{
+   
+    width: fit-content;
     margin-left: auto;
     margin-right: auto;
-} */
+}
 .project-section{
    padding: 3rem;
 }
@@ -172,13 +175,19 @@ align-content: center;
 .certificacion-card{
     padding: 1rem;
     border-radius: 14px; 
-    /* background: #61934a9c; */
+   
   background: #313237;
   box-shadow: 0px 25px 25px rgba(0, 0, 0, 0.15);
   border-radius: 12px;
   flex: none;
   order: 3;
   flex-grow: 0;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.line-blue{
+    height: 3px;
+    background: darkslateblue;
 }
 .certificacion-section{
    padding: 3rem;
@@ -207,6 +216,7 @@ align-content: center;
    .personal-info{
     padding-right: 1rem;
     padding-left: 1rem;
+    padding-top: 1rem;
    }
    .project-section{
     padding-right: 1rem;
