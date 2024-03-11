@@ -31,6 +31,9 @@ section{
     display: flex;
    
 }
+.color-black{
+color: black;
+}
 .center{
     justify-content: center;
 }
