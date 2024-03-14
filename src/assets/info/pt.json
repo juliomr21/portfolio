@@ -1,0 +1,147 @@
+{
+    "personal": {
+        "saludo": "Olá, sou Julio Cesar Moreno Ramírez.",
+        "titulo": "Bacharel em Ciência da Computação.",
+        "descripcion": "Professor de programação competitiva especializado em estruturas de dados e algoritmos.Experiente em desenvolvimento web, com foco no Front-End e utilizando Angular. Independente,confiável e amigável, adaptável e bem organizado. Interessado em aprender as últimas tecnologias de forma rápida. Capaz de trabalhar bem em equipe ou individualmente. Objetivo futuro: tornar-me um desenvolvedor full stack sênior.",
+        "cv": "assets/pdf/cv.pdf"
+    },
+    "skill": {
+        "section": "Habilidades, ferramentas e tecnologias que utilizo:"
+    },
+    "proyectos": {
+        "section": "Projetos desenvolvidos",
+        "project": [
+            {
+                "tema": "Sistema de Pagamentos Parcelados.",
+                "type": "Sistema web. Desenvolvimento frontend.",
+                "empresa": "Livre.digital (2022)",
+                "dir_site": "https://livre.digital/conta/",
+                "dir_code": "",
+                "description": " Desenvolvimento frontend do Sistema web para a empresa Livre.digital, uma fintech que possibilita o pagamento parcelado de PIX e boletos usando o limite do cartão de crédito de forma rápida e segura.",
+                "image": "assets/images/project/1.png"
+            },
+            {
+                "tema": "Empréstimo com garantia de imóvel.",
+                "type": "Landing Page. Desenvolvimento frontend.",
+                "empresa": "Livre.digital (2024)",
+                "dir_site": "https://livre.digital/imovel/",
+                "dir_code": "",
+                "description": " Desenvolvimento frontend da Landing Page para a empresa Livre.digital, uma fintech que possibilita o pagamento parcelado de PIX e boletos usando o limite do cartão de crédito de forma rápida e segura.",
+                "image": "assets/images/project/2.png"
+            },
+            {
+                "tema": "Ecommerce FakeStore.",
+                "type": "Ecommerce. Desenvolvimento frontend.",
+                "empresa": "Projeto Pessoal (2024)",
+                "dir_site": "https://juliomr21.github.io/ecommercePro/",
+                "dir_code": "https://github.com/juliomr21/ecommercePro/",
+                "description": "  Desenvolvimento frontend do FakeStore, projeto pessoal que simula o comportamento real de um ecommerce utilizando armazenamento local e os serviços da API REST dummyJSON",
+                "image": "assets/images/project/3.png"
+            },
+            {
+                "tema": "EasyBank.",
+                "type": "Landing page. Desenvolvimento frontend.",
+                "empresa": "Projeto Pessoal. Frontend Mentor(2022)",
+                "dir_site": "https://juliomr21.github.io/easybank/",
+                "dir_code": "https://github.com/juliomr21/easybank",
+                "description": "  Desenvolvimento frontend do EasyBank, projeto pessoal realizado em resposta ao desafio Frontend Mentor, que simula uma Landing Page de um banco digital.",
+                "image": "assets/images/project/4.png"
+            },
+            {
+                "tema": "Cinemax.",
+                "type": "Wiki site. Desenvolvimento frontend.",
+                "empresa": "Projeto Pessoal (2023)",
+                "dir_site": "https://juliomr21.github.io/cinemax/",
+                "dir_code": "https://github.com/juliomr21/cinemax/",
+                "description": "  Desenvolvimento frontend do Cinemax, um projeto pessoal estilo Wiki, no qual você tem acesso a informações sobre atores filmes, séries e programas de TV, utilizando a API REST do TMDB",
+                "image": "assets/images/project/5.png"
+            }
+        ]
+    },
+    "experiencia": {
+        "section": "Experiência",
+        "experiencia": [
+            {
+                "centro": "Freelancer (2021- Atualidade)",
+                "cargo": "Desenvolvedor Front-End",
+                "descripcion": "Como desenvolvedor front-end freelance me especializei na utilização de tecnologias como Angular, HTML, CSS, Bootstrap; conseguindo desenvolver sites com designs responsivos e consumo de API REST."
+            },
+            {
+                "centro": "Centro de Treinamento Provincial (2015-2023)",
+                "cargo": "Professor de programação competitiva",
+                "descripcion": " Durante essa etapa atuei como Treinador Provincial de Concursos de Programação de nível pré-universitário, colocando minha equipe entre as melhores do país, razão pela qual fui chamado em diversas ocasiões para preparar a Pré-seleção Nacional de Informática para o IOI."
+            },
+            {
+                "centro": "Instituto Prevocacional de Ciencias Exactas (2011-2015)",
+                "cargo": "Professor de matemática",
+                "descripcion": " Nesse período, dei aulas de matemática para alunos do Instituto Pré-Universitário de Ciências Exatas, que me permitiu consolidar conhecimentos e ganhar habilidades de ensino."
+            }
+        ]
+    },
+    "cetificacion": {
+        "section": "Certificações",
+        "certificados": [
+            {
+                "image": "assets/images/certificados/1.png",
+                "empresa": "HackerRank",
+                "titulo": "Angular (Intermediate)",
+                "link": "https://www.hackerrank.com/certificates/e568b16b16fd",
+                "type": "link"
+            },
+            {
+                "image": "assets/images/certificados/2.png",
+                "empresa": "HackerRank",
+                "titulo": "JavaScript (Basic)",
+                "link": "https://www.hackerrank.com/certificates/be1893cc5f99",
+                "type": "link"
+            },
+            {
+                "image": "assets/images/certificados/3.png",
+                "empresa": "HackerRank",
+                "titulo": "Problem Solving (Basic)",
+                "link": "https://www.hackerrank.com/certificates/462391beaafc",
+                "type": "link"
+            },
+            {
+                "image": "assets/images/certificados/4.png",
+                "empresa": "ICPC (Coach)",
+                "titulo": "2021 ICPC Caribbean Finals (Cuban Qualifier)",
+                "link": "assets/pdf/ICPC2021.pdf",
+                "type": "pdf"
+            },
+            {
+                "image": "assets/images/certificados/5.png",
+                "empresa": "ICPC (Coach)",
+                "titulo": "2019 ICPC Caribbean Finals (Cuban Qualifier)",
+                "link": "assets/pdf/ICPC2019.pdf",
+                "type": "pdf"
+            }
+        ]
+    },
+    "formacion_principal": {
+        "section": "Formação.",
+        "titulo": "Bacharel em Ciência da Computação",
+        "centro": "Universidad de Oriente, Cuba (2006-2011)"
+    },
+    "formacion_complementaria": {
+        "section": "Formação complementária.",
+        "cursos": [
+            {
+                "titulo": "Curso de Angular 8",
+                "centro": "Edutin Academy (2021)."
+            },
+            {
+                "titulo": "Curso de Bootstrap",
+                "centro": "Edutin Academy (2021)."
+            },
+            {
+                "titulo": "Fundamentos de Matemática Computacional",
+                "centro": "Universidad de Oriente (2020)."
+            },
+            {
+                "titulo": "Programação competitiva no preuniversitário",
+                "centro": "UCI (2018)."
+            }
+        ]
+    }
+}
