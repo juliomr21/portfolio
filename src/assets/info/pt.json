@@ -3,10 +3,53 @@
         "saludo": "Olá, sou Julio Cesar Moreno Ramírez.",
         "titulo": "Bacharel em Ciência da Computação.",
         "descripcion": "Professor de programação competitiva especializado em estruturas de dados e algoritmos.Experiente em desenvolvimento web, com foco no Front-End e utilizando Angular. Independente,confiável e amigável, adaptável e bem organizado. Interessado em aprender as últimas tecnologias de forma rápida. Capaz de trabalhar bem em equipe ou individualmente. Objetivo futuro: tornar-me um desenvolvedor full stack sênior.",
-        "cv": "assets/pdf/cv.pdf"
+        "cv": "assets/pdf/cv.pdf",
+        "image": "assets/images/personal.jpg"
     },
     "skill": {
-        "section": "Habilidades, ferramentas e tecnologias que utilizo:"
+        "section": "Habilidades, ferramentas e tecnologias que utilizo:",
+        "skills": [
+            {
+                "image": "assets/images/skill/01.png",
+                "titulo": "HTML"
+            },
+            {
+                "image": "assets/images/skill/02.png",
+                "titulo": "CSS"
+            },
+            {
+                "image": "assets/images/skill/03.png",
+                "titulo": "JavaScript"
+            },
+            {
+                "image": "assets/images/skill/04.png",
+                "titulo": "TypeScript"
+            },
+            {
+                "image": "assets/images/skill/05.png",
+                "titulo": "Angular"
+            },
+            {
+                "image": "assets/images/skill/06.png",
+                "titulo": "Bootstrap"
+            },
+            {
+                "image": "assets/images/skill/07.png",
+                "titulo": "Node.Js"
+            },
+            {
+                "image": "assets/images/skill/08.png",
+                "titulo": "C++"
+            },
+            {
+                "image": "assets/images/skill/09.png",
+                "titulo": "Git"
+            },
+            {
+                "image": "assets/images/skill/10.png",
+                "titulo": "Github"
+            }
+        ]
     },
     "proyectos": {
         "section": "Projetos desenvolvidos",

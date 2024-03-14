@@ -5,46 +5,38 @@
                 <div class="flex center">
                     <img class="home-inner mb-4 " alt="" src="assets/images/personal.jpg" />
                 </div>
-
-            </div>
-
+            </div>          
             <div class="row">
-
                 <div data-aos="fade-right" class=" col-md-8 ">
                     <div class="personal-info-text ">
-                        <h1> Olá, sou Julio Cesar Moreno Ramírez</h1>
+                        <h1>{{portfolio?.personal?.saludo}}</h1>
                         <div>
-                            <h2>Bacharel em Ciência da
-                                Computação</h2>
-
+                            <h2>{{portfolio?.personal?.titulo}}</h2>
                         </div>
-
-                        <p> "Professor de programação competitiva especializado em estruturas de dados e algoritmos.
-                            Experiente em desenvolvimento web, com foco no Front-End e utilizando Angular. Independente,
-                            confiável e amigável, adaptável e bem organizado. Interessado em aprender as últimas
-                            tecnologias de forma rápida. Capaz de trabalhar bem em equipe ou individualmente. Objetivo
-                            futuro: tornar-me um desenvolvedor full stack sênior."
-                        </p>
-                        <div class="flex gap10 ">
-                            <div>
-
-                                <a class=" btn btn-primary" href="assets/pdf/cv.pdf" download="cv-Julio-C-Moreno-Ramirez.pdf">Download CV <i
-                                        class="fa fa-download" aria-hidden="true"></i> </a>
+                        <p> {{portfolio?.personal?.descripcion}} </p>
+                        @if (download) {
+                            <div class="flex gap10 ">
+                                <div>
+                                    <a class=" btn btn-primary" href={{portfolio?.personal?.cv}}
+                                        download="cv-Julio-C-Moreno-Ramirez.pdf">Download CV <i class="fa fa-download"
+                                            aria-hidden="true"></i> </a>
+                                </div>
+    
+                                <div class="flex gap10 center">
+                                    <a href="https://api.whatsapp.com/send?phone=5521981835244" target="_blank"><i
+                                            class="fa fa-brands fa-whatsapp fa-xl"></i></a>
+                                    <a href="https://www.facebook.com/profile.php?id=100010656570420" target="_blank"> <i
+                                            class="fa-brands fa-facebook fa-xl"></i></a>
+                                    <a href="https://www.linkedin.com/in/julio-cesar-moreno-ram%C3%ADrez-45ab59245?jobid=1234&lipi=urn%3Ali%3Apage%3Ad_jobs_easyapply_pdfgenresume%3BdNCeH%2BSaRBG4zU7QCA1eUA%3D%3D&licu=urn%3Ali%3Acontrol%3Ad_jobs_easyapply_pdfgenresume-v02_profile"
+                                        target="_blank">
+                                        <i class="fa-brands fa-linkedin fa-xl"></i></a>
+                                    <a href="https://github.com/juliomr21/" target="_blank"><i
+                                            class="fa-brands fa-github fa-xl"></i></a>
+                                </div>
+                                <div class="line-blue"></div>
                             </div>
-
-                            <div class="flex gap10 center">
-                                <a href="https://api.whatsapp.com/send?phone=5521981835244" target="_blank"><i
-                                        class="fa fa-brands fa-whatsapp fa-xl"></i></a>
-                                <a href="https://www.facebook.com/profile.php?id=100010656570420" target="_blank"> <i
-                                        class="fa-brands fa-facebook fa-xl"></i></a>
-                                <a href="https://www.linkedin.com/in/julio-cesar-moreno-ram%C3%ADrez-45ab59245?jobid=1234&lipi=urn%3Ali%3Apage%3Ad_jobs_easyapply_pdfgenresume%3BdNCeH%2BSaRBG4zU7QCA1eUA%3D%3D&licu=urn%3Ali%3Acontrol%3Ad_jobs_easyapply_pdfgenresume-v02_profile"
-                                    target="_blank">
-                                    <i class="fa-brands fa-linkedin fa-xl"></i></a>
-                                <a href="https://github.com/juliomr21/" target="_blank"><i
-                                        class="fa-brands fa-github fa-xl"></i></a>
-                            </div>
-                            <div class="line-blue"></div>
-                        </div>
+                        }
+                       
                     </div>
                 </div>
                 <div class="d-none d-md-block col-4">
@@ -56,481 +48,131 @@
         </div>
     </section>
     <section data-aos="fade-up" class="skill-section">
-        <h2 class="text-center mb-3">Habilidades, ferramentas e tecnologias que utilizo:</h2>
+        <h2 class="text-center mb-3">{{portfolio?.skill?.section}}</h2>
         <div class="container">
             <div class=" skill-logo row  text-primary">
-                <div class="col mt-3 center flex">
-                    <div>
-                        <img class="skill-logo-form" src="assets/images/skill/01.png" alt="">
-                        <h6 class="text-white text-center mt-1">HTML</h6>
+                @for (skill of portfolio?.skill?.skills; track $index) {
+                    <div class="col mt-3 center flex">
+                        <div>
+                            <img class="skill-logo-form" src={{skill.image}} alt="">
+                            <h6 class="text-white text-center mt-1">{{skill.titulo}}</h6>
+                        </div>    
                     </div>
-
-                </div>
-                <div class="col  mt-3 center flex">
-                    <div>
-                        <img class="skill-logo-form" src="assets/images/skill/02.png" alt="">
-                        <h6 class="text-white text-center mt-1">CSS</h6>
-                    </div>
-
-                </div>
-                <div class="col  mt-3 center flex">
-                    <div>
-                        <div class="center-img">
-                            <img class="skill-logo-form" src="assets/images/skill/03.png" alt="">
-                        </div>
-
-                        <h6 class="text-white text-center mt-1">JavaScript</h6>
-                    </div>
-
-                </div>
-
-                <div class="col  mt-3 center flex">
-                    <div>
-                        <div class="center-img">
-                            <img class="skill-logo-form" src="assets/images/skill/04.png" alt="">
-                        </div>
-                        <h6 class="text-white mt-1">TypeScript</h6>
-                    </div>
-                </div>
-                <div class="col  mt-3 center flex">
-                    <div>
-                        <div class="center-img">
-                            <img class="skill-logo-form" src="assets/images/skill/05.png" alt="">
-                        </div>
-                        <h6 class="text-white mt-1">Angular</h6>
-                    </div>
-
-                </div>
-                <div class="col  mt-3 center flex">
-                    <div>
-                        <div class="center-img">
-                            <img class="skill-logo-form" src="assets/images/skill/06.png" alt="">
-                        </div>
-                        <h6 class="text-white text-center mt-1">Bootstrap</h6>
-                    </div>
-
-                </div>
-                <div class="col  mt-3 center flex">
-                    <div>
-                        <div class="center-img">
-                            <img class="skill-logo-form" src="assets/images/skill/07.png" alt="">
-                        </div>
-                        <h6 class="text-white text-center mt-1">Node.Js</h6>
-                    </div>
-
-                </div>
-                <div class="col  mt-3 center flex">
-                    <div>
-                        <div class="center-img">
-                            <img class="skill-logo-form" src="assets/images/skill/08.png" alt="">
-                        </div>
-                        <h6 class="text-white text-center mt-1">C++</h6>
-                    </div>
-
-                </div>
-                <div class="col mt-3 center flex">
-                    <div>
-                        <div class="center-img">
-                            <img class="skill-logo-form" src="assets/images/skill/09.png" alt="">
-                        </div>
-                        <h6 class="text-white text-center mt-1">Git</h6>
-                    </div>
-
-                </div>
-                <div class="col mt-3 center flex">
-                    <div>
-                        <div class="skill-logo-form">
-                            <i class="text-white fa-brands fa-github "></i>
-                        </div>
-
-                        <h6 class="text-white text-center">Github</h6>
-                    </div>
-
-                </div>
+                }               
             </div>
         </div>
-
     </section>
     <section data-aos="fade-up" class="project-section">
-        <h2 class="text-center mb-5 ">Projetos desenvolvidos</h2>
+        <h2 class="text-center mb-5 ">{{portfolio?.proyectos?.section}}</h2>
         <div class="container">
             <div class="row row-cols-1 row-cols-lg-2">
-                <div  class="col mt-3">
-                    <div class=" project-card nav-link">
-                        <div class="row">
-                            <div class="col-lg-4 col-md-4">
-                                <img class="img-project" alt="" src="assets/images/project/1.png" />
-                            </div>
-                            <div class="col-lg-8 col-md-8">
-                                <h3 class="">Sistema de Pagamentos Parcelados. </h3>
-
-                                <div class="card-project-info-ano">
-                                    <p>Sistema web. Desenvolvimento frontend. </p>
-                                    <p> </p>
-                                </div>
-                                <div class="flex gap10 mt-1">
-                                    <button class="btn " href="" disabled="true">Ver código <i
-                                            class=" fa-brands fa-github "></i></button>
-                                    <a class="btn btn-primary" href="https://livre.digital/conta/" target="_blank">Ver
-                                        site <i class="fa fa-external-link" aria-hidden="true"></i></a>
-                                </div>
-
-                            </div>
-                            <p class="card-project-info-description mt-2">
-                                Desenvolvimento frontend do Sistema web para a empresa "Livre.digital", uma fintech que
-                                possibilita o pagamento parcelado de PIX e boletos usando o limite do cartão de crédito
-                                de forma rápida e segura.
-                            </p>
-
-                        </div>
-                    </div>
-                </div>
-                <div  class="col mt-3">
-                    <div class="project-card nav-link" >
-                        <div class="row">
-                            <div class="col-lg-4 col-md-4">
-                                <img class="img-project" alt="" src="assets/images/project/2.png" />
-                            </div>
-                            <div class="col-lg-8 col-md-8">
-                                <h3 class="">Empréstimo com garantia de imóvel. </h3>
-
-                                <div class="card-project-info-ano">
-                                    <p>Landing Page. Desenvolvimento frontend. </p>
-                                    <p>Livre.digital (2024)</p>
-                                </div>
-                                <div class="flex gap10 mt-1">
-                                    <button class="btn " href="" disabled="true">Ver código <i
-                                            class=" fa-brands fa-github "></i></button>
-                                    <a class="btn btn-primary" href="https://livre.digital/imovel/" target="_blank">Ver
-                                        site <i class="fa fa-external-link" aria-hidden="true"></i></a>
-                                </div>
-
-
-                            </div>
-                            <p class="card-project-info-description mt-2">
-                                Desenvolvimento frontend da Landing Page para a empresa "Livre.digital", uma fintech que
-                                possibilita o pagamento parcelado de PIX e boletos usando o limite do cartão de crédito
-                                de forma rápida e segura.
-                            </p>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row row-cols-1 row-cols-lg-2">
-                <div  class="col mt-3">
-                    <div class=" project-card nav-link">
-                        <div class="row">
-                            <div class="col-lg-4 col-md-4">
-                                <img class="img-project" alt="" src="assets/images/project/3.png" />
-                            </div>
-                            <div class="col-lg-8 col-md-8">
-                                <h3 class="">Ecommerce FakeStore. </h3>
-                                <div class="card-project-info-ano">
-                                    <p>Ecommerce. Desenvolvimento frontend. </p>
-                                    <p>Projeto Pessoal (2024)</p>
-                                </div>
-                                <div class="flex gap10 mt-2">
-                                    <a class="btn btn-light" href="https://github.com/juliomr21/ecommercePro/"
-                                        target="_blank">Ver código <i class=" fa-brands fa-github color-black "></i></a>
-                                    <a class="btn btn-primary" href="https://juliomr21.github.io/ecommercePro/"
-                                        target="_blank">Ver site <i class="fa fa-external-link"
-                                            aria-hidden="true"></i></a>
-                                </div>
-                            </div>
-                            <p class="card-project-info-description mt-1">
-                                Desenvolvimento frontend do FakeStore, projeto pessoal que simula o comportamento real
-                                de um ecommerce utilizando armazenamento local e os serviços da API REST dummyJSON
-                            </p>
-
-                        </div>
-                    </div>
-                </div>
+                @for (proyecto of portfolio?.proyectos?.project ; track $index) {
                 <div class="col mt-3">
                     <div class=" project-card nav-link">
                         <div class="row">
                             <div class="col-lg-4 col-md-4">
-                                <img class="img-project" alt="" src="assets/images/project/4.png" />
+                                <img class="img-project" alt="" src={{proyecto.image}} />
                             </div>
                             <div class="col-lg-8 col-md-8">
-                                <h3 class="">EasyBank.</h3>
+                                <h3 class="">{{proyecto.tema}} </h3>
                                 <div class="card-project-info-ano">
-                                    <p>Landing page. Desenvolvimento frontend. </p>
-                                    <p>Projeto Pessoal. Frontend Mentor(2022)</p>
+                                    <p>{{proyecto.type}} </p>
+                                    <p>{{proyecto.empresa}}</p>
                                 </div>
-                                <div class="flex gap10 mt-2">
-                                    <a class="btn btn-light" href="https://github.com/juliomr21/easybank"
-                                        target="_blank">Ver código <i class=" fa-brands fa-github color-black"></i></a>
-                                    <a class="btn btn-primary" href="https://juliomr21.github.io/easybank/"
-                                        target="_blank">Ver site <i class="fa fa-external-link"
-                                            aria-hidden="true"></i></a>
+                                <div class="flex gap10 mt-1">
+                                    @if (proyecto.dir_code === '') {
+                                    <button class="btn " href="" disabled="true">Ver código <i
+                                            class=" fa-brands fa-github "></i></button>
+                                    }@else{
+                                    <a class="btn btn-light" href={{proyecto.dir_code}} target="_blank">Ver código <i
+                                            class=" fa-brands fa-github color-black "></i></a>
+                                    }
+                                    <a class="btn btn-primary" href={{proyecto.dir_site}} target="_blank">Ver
+                                        site <i class="fa fa-external-link" aria-hidden="true"></i></a>
                                 </div>
                             </div>
-                            <p class="card-project-info-description">
-                                Desenvolvimento frontend do EasyBank, projeto pessoal realizado em resposta ao desafio
-                                Frontend Mentor, que simula uma Landing Page de um banco digital.
+                            <p class="card-project-info-description mt-2">
+                                {{proyecto.description}}
                             </p>
-
                         </div>
                     </div>
                 </div>
-
-            </div>
-            <div class="row row-cols-1 row-cols-lg-2">
-                <div class="col mt-3">
-                    <div class=" project-card nav-link">
-                        <div class="row">
-                            <div class="col-lg-4 col-md-4">
-                                <img class="img-project" alt="" src="assets/images/project/5.png" />
-
-                            </div>
-                            <div class="col-lg-8 col-md-8">
-                                <h3 class="">Cinemax. </h3>
-                                <div class="card-project-info-ano">
-                                    <p>Wiki site. Desenvolvimento frontend. </p>
-                                    <p>Projeto Pessoal (2023)</p>
-                                </div>
-                                <div class="flex gap10 mt-2">
-                                    <a class="btn btn-light" href="https://github.com/juliomr21/cinemax/"
-                                        target="_blank">Ver código <i class=" fa-brands fa-github color-black"></i></a>
-                                    <a class="btn btn-primary" href="https://juliomr21.github.io/cinemax/"
-                                        target="_blank">Ver site <i class="fa fa-external-link"
-                                            aria-hidden="true"></i></a>
-                                </div>
-                            </div>
-                            <p class="card-project-info-description mt-1">
-                                Desenvolvimento frontend do Cinemax, um projeto pessoal estilo Wiki, no qual você tem
-                                acesso a informações sobre atores filmes, séries e programas de TV, utilizando a API
-                                REST do TMDB
-                            </p>
-
-                        </div>
-                    </div>
-                </div>
-                <!-- <div data-aos="flip-left" class="col mt-3">
-                   <div class=" project-card nav-link" >
-                       <div class="row">
-                           <div class="col-lg-4 col-md-4">
-                               <img class="img-project" alt="" src="assets/images/project/4.png" />
-                           </div>
-                           <div class="col-lg-8 col-md-8">
-                               <h3 class="">EasyBank.</h3>
-                               <div class="card-project-info-ano">
-                                   <p>Landing page. Desenvolvimento frontend. </p>
-                                   <p>Projeto Pessoal. Frontend Mentor(2024)</p>
-                               </div>
-                               <div class="flex gap10 mt-2">
-                                 <a class="btn btn-light" href="https://github.com/juliomr21/easybank" target="_blank">Ver código</a>
-                                 <a class="btn btn-primary" href="https://juliomr21.github.io/easybank/" target="_blank">Ver site</a>                                  
-                               </div>
-                           </div>
-                           <p class="card-project-info-description">
-                               Desenvolvimento frontend do EasyBank, projeto pessoal realizado em resposta ao desafio Frontend Mentor, que simula uma Landing Page de um banco digital.
-                           </p>
-
-                       </div>
-                   </div>
-               </div> -->
-
-            </div>
-
-        </div>
-
-    </section>
-    <section class="experiencia  ">
-        <div class="container">
-            <h2 class="text-center mb-5">Experiência</h2>
-
-            <div class="flex center">
-                <div class="col-md-8 col-12">
-                    <div data-aos="fade-right" class="experiencia-card">
-                        <h4>Freelancer (2021- Atualidade)</h4>
-                        <b> Desenvolvedor Front-End</b>
-                        <p>
-
-
-                            Como desenvolvedor front-end freelance me
-                            especializei na utilização de tecnologias
-                            como Angular, HTML, CSS, Bootstrap;
-                            conseguindo desenvolver sites com designs
-                            responsivos e consumo de API REST.
-                        </p>
-                    </div>
-                    <div data-aos="fade-right" class="experiencia-card mt-3">
-                        <h4> Centro de Treinamento Provincial (2015-
-                            2023)</h4>
-                        <b> Professor de programação
-                            competitiva</b>
-                        <p>
-                            Durante essa etapa atuei como Treinador
-                            Provincial de Concursos de Programação de
-                            nível pré-universitário, colocando minha
-                            equipe entre as melhores do país, razão pela
-                            qual fui chamado em diversas ocasiões para
-                            preparar a Pré-seleção Nacional de
-                            Informática para o IOI.
-                        </p>
-
-                    </div>
-                    <div data-aos="fade-right" class="experiencia-card mt-3">
-                        <h4> Instituto Prevocacional de Ciencias Exactas (2011-
-                            2015)</h4>
-                        <b> Professor de matemática</b>
-                        <p>
-                            Nesse período, dei aulas de matemática
-                            para alunos do Instituto Pré-Universitário de Ciências Exatas, que
-                            me permitiu consolidar conhecimentos e ganhar
-                            habilidades de ensino.
-
-
-                        </p>
-
-                    </div>
-                </div>
-
-            </div>
-
-
-        </div>
-
-    </section>
-    <section class="certificacion-section">
-        <div data-aos="fade-up" class="container">
-            <h2 class="text-center mb-5">Certificações</h2>
-            <div class="row">
-                <div class="col-lg-4 col-12 mb-3 col">
-                    <div class="container">
-                        <div class="certificacion-card row">
-                            <div class="col-6">
-                                <img class="certificacion-image col-12" src="assets/images/certificados/1.png" alt="">
-                            </div>
-                            <div class="col-6">
-                                <h5>HackerRank</h5>
-                                <h6>Angular (Intermediate)</h6>
-                                <a class=" nav-link certificacion-link text-center"
-                                    href="https://www.hackerrank.com/certificates/e568b16b16fd" target="_blank"
-                                    rel="noopener noreferrer">Ver certificação <i class="fa fa-external-link"
-                                        aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-12 mb-3 col">
-                    <div class="container">
-                        <div class="certificacion-card row">
-                            <div class="col-6">
-                                <img class="certificacion-image col-12" src="assets/images/certificados/2.png" alt="">
-                            </div>
-                            <div class="col-6">
-                                <h5>HackerRank</h5>
-                                <h6>JavaScript <br>(Basic)</h6>
-                                <a class="nav-link certificacion-link  text-center "
-                                    href="https://www.hackerrank.com/certificates/be1893cc5f99" target="_blank"
-                                    rel="noopener noreferrer">Ver certificação <i class="fa fa-external-link"
-                                        aria-hidden="true"></i></a>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-12 col mb-3">
-                    <div class="container">
-                        <div class="certificacion-card row">
-                            <div class="col-6">
-                                <img class="certificacion-image col-12" src="assets/images/certificados/3.png" alt="">
-                            </div>
-                            <div class="col-6">
-                                <h5>HackerRank</h5>
-                                <h6>Problem Solving (Basic)</h6>
-
-                                <a class="nav-link certificacion-link text-center "
-                                    href="https://www.hackerrank.com/certificates/462391beaafc" target="_blank"
-                                    rel="noopener noreferrer">Ver certificação <i class="fa fa-external-link"
-                                        aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-                <div class="col-lg-4 col-12 col mb-3">
-                    <div class="container">
-                        <div class="certificacion-card row">
-                            <div class="col-6">
-                                <img class="certificacion-image col-12" src="assets/images/certificados/4.png" alt="">
-                            </div>
-                            <div class="col-6">
-                                <h5>ICPC (Coach)</h5>
-                                <h6>2021 ICPC Caribbean Finals (Cuban Qualifier)</h6>
-                                <a class="nav-link certificacion-link text-center " href="assets/pdf/ICPC2021.pdf"
-                                    download="ICPC2021.pdf">Download PDF <i class="fa fa-download"
-                                        aria-hidden="true"></i> </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-12 col mb-3">
-                    <div class="container">
-                        <div class="certificacion-card row">
-                            <div class="col-6">
-                                <img class="certificacion-image col-12" src="assets/images/certificados/5.png" alt="">
-                            </div>
-                            <div class="col-6">
-                                <h5>ICPC (Coach)</h5>
-                                <h6>2019 ICPC Caribbean Finals (Cuban Qualifier)</h6>
-                                <a class="nav-link certificacion-link text-center " href="assets/pdf/ICPC2021.pdf"
-                                    download="ICPC2021.pdf">Download PDF <i class="fa fa-download"
-                                        aria-hidden="true"></i> </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+                }
             </div>
         </div>
     </section>
     <section class="experiencia">
         <div class="container">
-            <h2 class="text-center mb-5">Formação.</h2>
+            <h2 class="text-center mb-5">{{portfolio?.experiencia?.section}}</h2>
+            <div class="flex center">
+                <div class="col-md-8 col-12">
+                    @for(experiencia of portfolio?.experiencia?.experiencia ; track $index){
+
+                    <div data-aos="fade-right" class="experiencia-card mt-2">
+                        <h4>{{experiencia.centro}}</h4>
+                        <b> {{experiencia.cargo}}</b>
+                        <p> {{experiencia.descripcion}} </p>
+                    </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="certificacion-section">
+        <div data-aos="fade-up" class="container">
+            <h2 class="text-center mb-5">{{portfolio?.cetificacion?.section}}</h2>
+            <div class="row">
+                @for (certificacion of portfolio?.cetificacion?.certificados; track $index) {
+                    <div class="col-lg-4 col-12 mb-3 col">
+                        <div class="container">
+                            <div class="certificacion-card row">
+                                <div class="col-6">
+                                    <img class="certificacion-image col-12" src={{certificacion.image}} alt="">
+                                </div>
+                                <div class="col-6">
+                                    <h5>{{certificacion.empresa}}</h5>
+                                    <h6>{{certificacion.titulo}}</h6>
+                                    @if (certificacion.type === 'link') {
+                                        <a class=" nav-link certificacion-link text-center"
+                                        href={{certificacion.link}} target="_blank"
+                                        rel="noopener noreferrer">Ver certificação <i class="fa fa-external-link"
+                                            aria-hidden="true"></i></a>
+                                    }@else {
+                                        <a class="nav-link certificacion-link text-center " href={{certificacion.link}}
+                                    download="ICPC2021.pdf">Download PDF <i class="fa fa-download"
+                                        aria-hidden="true"></i> </a>
+                                    }                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }                
+            </div>
+        </div>
+    </section>
+    <section class="experiencia">
+        <div class="container">
+            <h2 class="text-center mb-5">{{portfolio?.formacion_principal?.section}} Formação.</h2>
             <div data-aos="fade-right" class="flex center">
                 <div class="col-md-8 col-12">
                     <div class="formacion-card">
-                        <h4 class="text-center">Bacharel em Ciência da Computação</h4>
-                        <h4 class="text-center">Universidad de Oriente, Cuba (2006-
-                            2011)</h4>
-
+                        <h4 class="text-center">{{portfolio?.formacion_principal?.titulo}}</h4>
+                        <h4 class="text-center">{{portfolio?.formacion_principal?.centro}}</h4>
                     </div>
                 </div>
             </div>
-            <h2 class="text-center mb-5 mt-5">Formação complementária.</h2>
+            <h2 class="text-center mb-5 mt-5">{{portfolio?.formacion_complementaria?.section}}</h2>
             <div class="flex center">
                 <div class="container">
                     <div class="row">
-                        <div data-aos="fade-right" class="col-lg-6 col-12 mt-3">
-                            <div class="formacion-card">
-                                <h4 class="text-center">Curso de Angular 8</h4>
-                                <h4 class="text-center">Edutin Academy (2021).</h4>
+                        @for (cursos of portfolio?.formacion_complementaria?.cursos; track $index) {
+                            <div data-aos="fade-right" class="col-lg-6 col-12 mt-3">
+                                <div class="formacion-card">
+                                    <h4 class="text-center">Curso de Angular 8</h4>
+                                    <h4 class="text-center">Edutin Academy (2021).</h4>
+                                </div>
                             </div>
-                        </div>
-                        <div data-aos="fade-right" class="col-lg-6 col-12 mt-3">
-                            <div class="formacion-card">
-                                <h4 class="text-center">Curso de Bootstrap</h4>
-                                <h4 class="text-center">Edutin Academy (2021).</h4>
-                            </div>
-                        </div>
-                        <div data-aos="fade-right" class="col-lg-6 col-12 mt-3">
-                            <div class="formacion-card">
-                                <h4 class="text-center">Fundamentos de Matemática Computacional</h4>
-                                <h4 class="text-center">Universidad de Oriente (2020)</h4>
-                            </div>
-                        </div>
-                        <div data-aos="fade-right" class="col-lg-6 col-12 mt-3">
-                            <div class="formacion-card">
-                                <h4 class="text-center">Programação competitiva no
-                                    preuniversitário</h4>
-                                <h4 class="text-center"> UCI (2018).</h4>
-                            </div>
-                        </div>
+                        }                       
                     </div>
                 </div>
             </div>
