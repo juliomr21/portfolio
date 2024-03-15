@@ -1,6 +1,6 @@
 {
     "personal": {
-        "saludo": "Hola, soy Julio César Moreno Ramírez.",
+        "saludo": "Hola, soy Julio Cesar Moreno Ramírez.",
         "titulo": "Licenciado en Ciencias de la Computación.",
         "descripcion": "Profesor de programación competitiva especializado en estructuras de datos y algoritmos. Experimentado en desarrollo web, con enfoque en el Front-End y utilizando Angular. Independiente, confiable y amigable, adaptable y bien organizado. Interesado en aprender las últimas tecnologías de forma rápida. Capaz de trabajar bien en equipo o individualmente. Objetivo futuro: convertirme en un desarrollador full stack senior.",
         "cv": "assets/pdf/cv.pdf",
@@ -65,7 +65,7 @@
             },
             {
                 "tema": "Préstamo con Garantía Hipotecaria.",
-                "type": "Landing Page.. Desarrollo frontend.",
+                "type": "Landing Page. Desarrollo frontend.",
                 "empresa": "Livre.digital (2024)",
                 "dir_site": "https://livre.digital/imovel/",
                 "dir_code": "",
