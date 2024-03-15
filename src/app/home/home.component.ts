@@ -18,11 +18,10 @@ constructor(private http: HttpClient) {
  }
 ngOnInit(){
   Aos.init();
-  this.http.get<Portfolio>('assets/info/pt.json').subscribe(resp => {
+  this.http.get<Portfolio>(`assets/info/${navigator.language.slice(0,2)}.json`).subscribe(resp => {
    this.portfolio = resp;
    this.download = true;
   });
-
 }
 
 }
