@@ -8,5 +8,11 @@ import { Component } from '@angular/core';
   styleUrl: './nav.component.css'
 })
 export class NavComponent {
-
+menu = false;
+closeMenu(){
+  this.menu = false
+}
+msg(){
+  console.log('jdjdjd')
+}
 }

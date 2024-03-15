@@ -5,7 +5,7 @@
 }
 .aling-link{
    display: flex;
-   gap: 45px;
+   gap: 40px;
    font-size: medium;
    
 }
@@ -15,5 +15,16 @@
         padding: 1rem;
         padding-top: 0;
         padding-bottom: 0;
+    }
+    .aling-link{
+        gap: 10px;
+        flex-direction: column;
+        background: #313237;
+        width: fit-content;
+        padding: 1rem;
+        position: absolute;
+        right: 10%;
+        top: 47px;
+
     }
 }

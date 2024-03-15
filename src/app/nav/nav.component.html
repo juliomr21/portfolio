@@ -2,17 +2,31 @@
     <div class="nav-bar">
         <div class="d-none d-md-block">
             <div class="aling-link">
-                <a class="nav-link">Works</a>
-                <a class="nav-link">Blog</a>
-                <a class="nav-link">Contact</a>
+                <a class="nav-link" href="#skill" >Skill</a>
+                <a class="nav-link" href="#projetos">Projetos</a>
+                <a class="nav-link" href="#exp" >Experiência</a>
+                <a class="nav-link" href="#cert">Certificações</a>
+                <a class="nav-link" href="#formacion">Formação</a>
             </div>
            
         </div>
         <div class="d-sm-none">
-              <img  src="assets/images/skill/menu.png" alt="">                    
+              <img  src="assets/images/skill/menu.png" alt="" (click)="menu = !menu">     
+              
+                          
         </div>
-        
-    
     </div>
+    @if(menu){
+        <div class="d-sm-none" (click)="closeMenu()">
+            <div class="aling-link">
+                <a class="nav-link" href="#skill" >Skill</a>
+                <a class="nav-link" href="#projetos">Projetos</a>
+                <a class="nav-link" href="#exp" >Experiência</a>
+                <a class="nav-link" href="#cert">Certificações</a>
+                <a class="nav-link" href="#formacion">Formação</a>
+            </div>
+        </div>
+    }
+   
 </div>
 

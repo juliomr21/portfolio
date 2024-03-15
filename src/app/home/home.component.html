@@ -47,9 +47,9 @@
             </div>
         </div>
     </section>
-    <section data-aos="fade-up" class="skill-section">
+    <section id="skill"  class="skill-section">
         <h2 class="text-center mb-3">{{portfolio?.skill?.section}}</h2>
-        <div class="container">
+        <div data-aos="fade-up" class="container">
             <div class=" skill-logo row  text-primary">
                 @for (skill of portfolio?.skill?.skills; track $index) {
                     <div class="col mt-3 center flex">
@@ -62,9 +62,9 @@
             </div>
         </div>
     </section>
-    <section data-aos="fade-up" class="project-section">
+    <section id="projetos"  class="project-section">
         <h2 class="text-center mb-5 ">{{portfolio?.proyectos?.section}}</h2>
-        <div class="container">
+        <div data-aos="fade-up" class="container">
             <div class="row row-cols-1 row-cols-lg-2">
                 @for (proyecto of portfolio?.proyectos?.project ; track $index) {
                 <div class="col mt-3">
@@ -101,7 +101,7 @@
             </div>
         </div>
     </section>
-    <section class="experiencia">
+    <section id="exp" class="experiencia">
         <div class="container">
             <h2 class="text-center mb-5">{{portfolio?.experiencia?.section}}</h2>
             <div class="flex center">
@@ -118,7 +118,7 @@
             </div>
         </div>
     </section>
-    <section class="certificacion-section">
+    <section id="cert" class="certificacion-section">
         <div data-aos="fade-up" class="container">
             <h2 class="text-center mb-5">{{portfolio?.cetificacion?.section}}</h2>
             <div class="row">
@@ -150,9 +150,9 @@
             </div>
         </div>
     </section>
-    <section class="experiencia">
+    <section id="formacion" class="experiencia">
         <div class="container">
-            <h2 class="text-center mb-5">{{portfolio?.formacion_principal?.section}} Formação.</h2>
+            <h2 class="text-center mb-5">{{portfolio?.formacion_principal?.section}}</h2>
             <div data-aos="fade-right" class="flex center">
                 <div class="col-md-8 col-12">
                     <div class="formacion-card">
