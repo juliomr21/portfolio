@@ -2,11 +2,11 @@
     <div class="nav-bar">
         <div class="d-none d-md-block">
             <div class="aling-link">
-                <a class="nav-link" href="#skill" >Skill</a>
-                <a class="nav-link" href="#projetos">Projetos</a>
-                <a class="nav-link" href="#exp" >Experiência</a>
-                <a class="nav-link" href="#cert">Certificações</a>
-                <a class="nav-link" href="#formacion">Formação</a>
+                <a class="nav-link" href="#skill" >{{linkShow[0]}}</a>
+                <a class="nav-link" href="#projetos">{{linkShow[1]}}</a>
+                <a class="nav-link" href="#exp" >{{linkShow[2]}}</a>
+                <a class="nav-link" href="#cert">{{linkShow[3]}}</a>
+                <a class="nav-link" href="#formacion">{{linkShow[4]}}</a>
             </div>
            
         </div>
@@ -19,11 +19,11 @@
     @if(menu){
         <div class="d-sm-none" (click)="closeMenu()">
             <div class="aling-link">
-                <a class="nav-link" href="#skill" >Skill</a>
-                <a class="nav-link" href="#projetos">Projetos</a>
-                <a class="nav-link" href="#exp" >Experiência</a>
-                <a class="nav-link" href="#cert">Certificações</a>
-                <a class="nav-link" href="#formacion">Formação</a>
+                <a class="nav-link" href="#skill" >{{linkShow[0]}}</a>
+                <a class="nav-link" href="#projetos">{{linkShow[1]}}</a>
+                <a class="nav-link" href="#exp" >{{linkShow[2]}}</a>
+                <a class="nav-link" href="#cert">{{linkShow[3]}}</a>
+                <a class="nav-link" href="#formacion">{{linkShow[4]}}</a>
             </div>
         </div>
     }
