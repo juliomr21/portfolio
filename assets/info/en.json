@@ -1,0 +1,190 @@
+{
+    "personal": {
+        "saludo": "Hello, I'm Julio Cesar Moreno Ramirez.",
+        "titulo": "Bachelor of Computer Science.",
+        "descripcion": "Competitive programming teacher specialized in data structures and algorithms. Experienced in web development, focusing on Front-End and using Angular. Independent, reliable, and friendly, adaptable and well-organized. Interested in quickly learning the latest technologies. Capable of working well in a team or individually. Future goal: become a senior full stack developer.",
+        "cv": "assets/pdf/cv.pdf",
+        "image": "assets/images/personal.jpg"
+    },
+    "skill": {
+        "section": "Skills, tools, and technologies I use:",
+        "skills": [
+            {
+                "image": "assets/images/skill/01.png",
+                "titulo": "HTML"
+            },
+            {
+                "image": "assets/images/skill/02.png",
+                "titulo": "CSS"
+            },
+            {
+                "image": "assets/images/skill/03.png",
+                "titulo": "JavaScript"
+            },
+            {
+                "image": "assets/images/skill/04.png",
+                "titulo": "TypeScript"
+            },
+            {
+                "image": "assets/images/skill/05.png",
+                "titulo": "Angular"
+            },
+            {
+                "image": "assets/images/skill/06.png",
+                "titulo": "Bootstrap"
+            },
+            {
+                "image": "assets/images/skill/07.png",
+                "titulo": "Node.Js"
+            },
+            {
+                "image": "assets/images/skill/08.png",
+                "titulo": "C++"
+            },
+            {
+                "image": "assets/images/skill/09.png",
+                "titulo": "Git"
+            },
+            {
+                "image": "assets/images/skill/10.png",
+                "titulo": "Github"
+            }
+        ]
+    },
+    "proyectos": {
+        "section": "Developed projects",
+        "project": [
+            {
+                "tema": "Installment Payment System.",
+                "type": "Web system. Frontend development.",
+                "empresa": "Livre.digital (2022)",
+                "dir_site": "https://livre.digital/conta/",
+                "dir_code": "",
+                "description": "Frontend development of the web system for the company Livre.digital, a fintech that enables installment payment of PIX and bills using the credit card limit quickly and securely.",
+                "image": "assets/images/project/1.png"
+            },
+            {
+                "tema": "Loan with property guarantee.",
+                "type": "Landing Page. Frontend development.",
+                "empresa": "Livre.digital (2024)",
+                "dir_site": "https://livre.digital/imovel/",
+                "dir_code": "",
+                "description": "Frontend development of the landing page for the company Livre.digital, a fintech that enables installment payment of PIX and bills using the credit card limit quickly and securely.",
+                "image": "assets/images/project/2.png"
+            },
+            {
+                "tema": "Ecommerce FakeStore.",
+                "type": "Ecommerce. Frontend development.",
+                "empresa": "Personal Project (2024)",
+                "dir_site": "https://juliomr21.github.io/ecommercePro/",
+                "dir_code": "https://github.com/juliomr21/ecommercePro/",
+                "description": "Frontend development of the FakeStore, a personal project that simulates the real behavior of an ecommerce using local storage and dummyJSON REST API services.",
+                "image": "assets/images/project/3.png"
+            },
+            {
+                "tema": "EasyBank.",
+                "type": "Landing page. Frontend development.",
+                "empresa": "Personal Project. Frontend Mentor (2022)",
+                "dir_site": "https://juliomr21.github.io/easybank/",
+                "dir_code": "https://github.com/juliomr21/easybank",
+                "description": "Frontend development of EasyBank, a personal project made in response to the Frontend Mentor challenge, which simulates a landing page of a digital bank.",
+                "image": "assets/images/project/4.png"
+            },
+            {
+                "tema": "Cinemax.",
+                "type": "Wiki site. Frontend development.",
+                "empresa": "Personal Project (2023)",
+                "dir_site": "https://juliomr21.github.io/cinemax/",
+                "dir_code": "https://github.com/juliomr21/cinemax/",
+                "description": "Frontend development of Cinemax, a personal Wiki-style project, where you have access to information about actors, movies, series, and TV shows using TMDB's REST API.",
+                "image": "assets/images/project/5.png"
+            }
+        ]
+    },
+    "experiencia": {
+        "section": "Experience",
+        "experiencia": [
+            {
+                "centro": "Freelancer (2021- Present)",
+                "cargo": "Front-End Developer",
+                "descripcion": "As a freelance front-end developer, I specialized in using technologies such as Angular, HTML, CSS, Bootstrap; achieving the development of sites with responsive designs and REST API consumption."
+            },
+            {
+                "centro": "Provincial Training Center (2015-2023)",
+                "cargo": "Competitive Programming Teacher",
+                "descripcion": "During this stage, I acted as Provincial Coach for Pre-University level Programming Contests, placing my team among the best in the country, which is why I was called on several occasions to prepare the National Informatics Pre-selection for the IOI."
+            },
+            {
+                "centro": "Pre-University Institute of Exact Sciences (2011-2015)",
+                "cargo": "Mathematics Teacher",
+                "descripcion": "During this period, I taught mathematics classes to students at the Pre-University Institute of Exact Sciences, which allowed me to consolidate knowledge and gain teaching skills."
+            }
+        ]
+    },
+    "cetificacion": {
+        "section": "Certifications",
+        "certificados": [
+            {
+                "image": "assets/images/certificados/1.png",
+                "empresa": "HackerRank",
+                "titulo": "Angular (Intermediate)",
+                "link": "https://www.hackerrank.com/certificates/e568b16b16fd",
+                "type": "link"
+            },
+            {
+                "image": "assets/images/certificados/2.png",
+                "empresa": "HackerRank",
+                "titulo": "JavaScript (Basic)",
+                "link": "https://www.hackerrank.com/certificates/be1893cc5f99",
+                "type": "link"
+            },
+            {
+                "image": "assets/images/certificados/3.png",
+                "empresa": "HackerRank",
+                "titulo": "Problem Solving (Basic)",
+                "link": "https://www.hackerrank.com/certificates/462391beaafc",
+                "type": "link"
+            },
+            {
+                "image": "assets/images/certificados/4.png",
+                "empresa": "ICPC (Coach)",
+                "titulo": "2021 ICPC Caribbean Finals (Cuban Qualifier)",
+                "link": "assets/pdf/ICPC2021.pdf",
+                "type": "pdf"
+            },
+            {
+                "image": "assets/images/certificados/5.png",
+                "empresa": "ICPC (Coach)",
+                "titulo": "2019 ICPC Caribbean Finals (Cuban Qualifier)",
+                "link": "assets/pdf/ICPC2019.pdf",
+                "type": "pdf"
+            }
+        ]
+    },
+    "formacion_principal": {
+        "section": "Education",
+        "titulo": "Bachelor of Computer Science",
+        "centro": "University of Oriente, Cuba (2006-2011)"
+    },
+    "formacion_complementaria": {
+        "section": "Complementary Education",
+        "cursos": [
+            {
+                "titulo": "Angular 8 Course",
+                "centro": "Edutin Academy (2021)."
+            },
+            {
+                "titulo": "Bootstrap Course",
+                "centro": "Edutin Academy (2021)."
+            },
+            {
+                "titulo": "Fundamentals of Computational Mathematics",
+                "centro": "University of Oriente (2020)."
+            },
+            {
+                "titulo": "Competitive Programming in Pre-University",
+                "centro": "UCI (2018)."
+            }
+        ]
+    }
+}
