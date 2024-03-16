@@ -1,5 +1,7 @@
 <div class="container">
+
     <div class="nav-bar">
+      
         <div class="d-none d-md-block">
             <div class="aling-link">
                 <a class="nav-link" href="#skill" >{{linkShow[0]}}</a>
@@ -10,6 +12,23 @@
             </div>
            
         </div>
+        <img src={{flag}} class="img-flag" alt="" (click)="menuFlag
+        = !menuFlag">
+        @if(menuFlag){
+            <div class="flag-style"  (click)="closeMenuFlag()">
+                <div>
+                    <img src="assets/images/flag/1.png" alt="" (click)="modificar('pt')">
+                </div>
+                <div>
+                    <img src="assets/images/flag/2.png" alt="" (click)="modificar('es')">
+                </div>
+                <div>
+                    <img src="assets/images/flag/3.png" alt="" (click)="modificar('en')">
+                </div>
+                
+                              
+            </div>
+        }
         <div class="d-sm-none">
               <img  src="assets/images/skill/menu.png" alt="" (click)="menu = !menu">     
               

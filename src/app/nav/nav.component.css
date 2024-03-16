@@ -9,6 +9,25 @@
    font-size: medium;
    
 }
+.flag-style{
+    gap: 10px;
+    flex-direction: column;
+    background: #313237;
+    width: fit-content;
+    padding: 5px;
+    position: absolute;
+    right: 10%;
+    top: 47px;
+    img{
+        width: 28px;
+    }
+
+}
+.img-flag{
+    margin-left: 10px;
+  width: 32px;
+  cursor: pointer;
+}
 @media(max-width:450px)
 {
     .nav-bar{
@@ -26,5 +45,13 @@
         right: 10%;
         top: 47px;
 
+    }
+    .flag-style{
+        right: 21%;
+  top: 40px;
+    }
+    .img-flag{
+        height: 32px;
+   margin-top: 18px;
     }
 }
