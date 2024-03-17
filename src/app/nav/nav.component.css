@@ -70,7 +70,7 @@ border-bottom: solid 2px darkslateblue;
 {
     .nav-bar{
         padding: 1rem;
-        padding-top: 0;
+        padding-top: 5px;
         padding-bottom: 0;
     }
     .aling-link{
