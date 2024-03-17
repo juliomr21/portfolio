@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { HttpService } from '../http.service';
+import { UpperCasePipe } from '@angular/common';
 
 @Component({
   selector: 'app-nav',
   standalone: true,
-  imports: [],
+  imports: [UpperCasePipe],
   templateUrl: './nav.component.html',
   styleUrl: './nav.component.css'
 })
@@ -16,32 +17,70 @@ export class NavComponent {
   linkEn = ['Skills', 'Projects', 'Experience', 'Certifications', 'Education']
   linkShow: string[] = [];
   flag = ""
+  lenguage = ""
+  styleDrop = {"display": "none"}
+  stylemenu = {"display": "none"}
+  menuDrop = false;
   constructor(private http: HttpService) { }
   ngOnInit() {
-
-    if (navigator.language.slice(0, 2) == 'pt') {
+    this.lenguage = navigator.language.slice(0, 2);
+    if (this.lenguage == 'pt') {
       this.linkShow = this.linkPt;
       this.flag = "assets/images/flag/1.png"
     }
-    if (navigator.language.slice(0, 2) == 'es') {
+    if (this.lenguage == 'es') {
       this.linkShow = this.linkEs;
       this.flag = "assets/images/flag/2.png"
     }
-    if (navigator.language.slice(0, 2) == 'en') {
+    if (this.lenguage == 'en') {
       this.linkShow = this.linkEn;
       this.flag = "assets/images/flag/3.png"
     }
 
   }
   closeMenu() {
-    this.menu = false
+ 
+    if(this.menuDrop)
+    {
+      this.styleDrop = {"display": "none"}
+      this.menuDrop = false;
+
+    }
+    if(this.menu)
+    {
+      this.stylemenu = {"display": "none"}
+      this.menu = false;
+
+    }else{
+      this.stylemenu = {"display": "block"}
+      this.menu = true;
+    }
   }
   closeMenuFlag() {
     this.menuFlag = false
   }
- 
-  modificar(cv: string) {
+  showMenu(){
+   if(this.menu)
+   {
+    this.stylemenu = {"display": "none"}
+    this.menu = false;
 
+  }
+    if(this.menuDrop)
+    {
+      this.styleDrop = {"display": "none"}
+      this.menuDrop = false;
+
+    }else{
+      this.styleDrop = {"display": "block"}
+      this.menuDrop = true;
+    }
+     
+  }
+  modificar(cv: string) {
+    this.styleDrop = {"display": "none"}
+    this.menuDrop = false;
+    this.lenguage = cv;
     if (cv == 'pt') {
       this.linkShow = this.linkPt;
       this.flag = "assets/images/flag/1.png"

@@ -1,7 +1,7 @@
 <div class="container">
 
     <div class="nav-bar">
-      
+        
         <div class="d-none d-md-block">
             <div class="aling-link">
                 <a class="nav-link" href="#skill" >{{linkShow[0]}}</a>
@@ -12,40 +12,35 @@
             </div>
            
         </div>
-        <img src={{flag}} class="img-flag" alt="" (click)="menuFlag
-        = !menuFlag">
-        @if(menuFlag){
-            <div class="flag-style"  (click)="closeMenuFlag()">
-                <div>
-                    <img src="assets/images/flag/1.png" alt="" (click)="modificar('pt')">
-                </div>
-                <div>
-                    <img src="assets/images/flag/2.png" alt="" (click)="modificar('es')">
-                </div>
-                <div>
-                    <img src="assets/images/flag/3.png" alt="" (click)="modificar('en')">
-                </div>
-                
-                              
+
+        <div class="dropdown">
+            <button class="dropbtn" (click)="showMenu()"><i class="fa-solid fa-language"></i>-{{lenguage|uppercase}}</button>
+            <div class="dropdown-content" [style]="styleDrop">
+                <a  (click)="modificar('pt')">
+                  Português-PT
+                </a>
+                <a (click)="modificar('es')">
+                    Español-ES
+                </a>
+                <a (click)="modificar('en')">
+                    English-EN
+                </a>
             </div>
-        }
+          </div>
         <div class="d-sm-none">
-              <img  src="assets/images/skill/menu.png" alt="" (click)="menu = !menu">     
-              
+             
+              <div class="dropdown">
+                <button class="dropbtn" (click)="closeMenu()"><i class="fa fa-bars" aria-hidden="true"></i></button>
+                <div class="dropdown-content posMenu" [style]="stylemenu" (click)="closeMenu()">
+                    <a class="nav-link" href="#skill" >{{linkShow[0]}}</a>
+                    <a class="nav-link" href="#projetos">{{linkShow[1]}}</a>
+                    <a class="nav-link" href="#exp" >{{linkShow[2]}}</a>
+                    <a class="nav-link" href="#cert">{{linkShow[3]}}</a>
+                    <a class="nav-link" href="#formacion">{{linkShow[4]}}</a>
+                </div>
+              </div>
                           
         </div>
     </div>
-    @if(menu){
-        <div class="d-sm-none" (click)="closeMenu()">
-            <div class="aling-link">
-                <a class="nav-link" href="#skill" >{{linkShow[0]}}</a>
-                <a class="nav-link" href="#projetos">{{linkShow[1]}}</a>
-                <a class="nav-link" href="#exp" >{{linkShow[2]}}</a>
-                <a class="nav-link" href="#cert">{{linkShow[3]}}</a>
-                <a class="nav-link" href="#formacion">{{linkShow[4]}}</a>
-            </div>
-        </div>
-    }
-   
+     
 </div>
-

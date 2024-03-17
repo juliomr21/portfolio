@@ -9,6 +9,9 @@
    font-size: medium;
    
 }
+.aling-link a:hover{
+border-bottom: solid 2px darkslateblue;
+}
 .flag-style{
     gap: 10px;
     flex-direction: column;
@@ -28,6 +31,41 @@
   width: 32px;
   cursor: pointer;
 }
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-left:10px ;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #313237;
+    
+   width: max-content;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+ 
+  .dropdown-content a {
+    padding: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown-content a:hover {background-color: darkslateblue}
+  .posMenu{
+    right: 10%;
+  }
+ 
 @media(max-width:450px)
 {
     .nav-bar{
