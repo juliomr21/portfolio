@@ -64,7 +64,7 @@ border-bottom: solid 2px darkslateblue;
   .dropdown-content a:hover {background-color: darkslateblue}
   .posMenu{
     right: 10%;
-  }
+  } 
  
 @media(max-width:450px)
 {
